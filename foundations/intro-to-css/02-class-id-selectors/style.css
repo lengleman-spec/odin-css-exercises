@@ -1,0 +1,19 @@
+.p-class {
+  background-color: hsl(0, 45%, 63%);
+  font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+#first-id {
+  color: hsl(240, 42%, 56%);
+  font-size: 36px;
+}
+
+.cool-class {
+  font-size: 36px;
+}
+
+#second-id {
+  background-color: lightgreen;
+  font-size: 24px;
+  font-weight: bold;
+}
