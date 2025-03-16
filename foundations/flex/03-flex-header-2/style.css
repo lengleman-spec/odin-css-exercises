@@ -15,6 +15,23 @@ body {
   /* i set the header to be a container for the nav links, logo, button, and profile image*/
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+/* i used the .left class to target and style the logo and links.
+i made the .left class a flex container to then style it's flex items shown below */
+.left {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+}
+
+/* i did the same to the right */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 8px;
 }
 
 .profile-image {
@@ -30,6 +47,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin-right: 16px;
 }
 
 button {
@@ -38,14 +56,18 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  margin-right: 16px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 0 8px;
 }
 
 ul {
   list-style-type: none;
+  /* i made the ul a flex container to style it's children (the nav links) */
+  display: flex;
 }
