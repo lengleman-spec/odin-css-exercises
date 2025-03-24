@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -33,7 +39,7 @@ input {
 
 .header li {
   list-style-type: none;
-  padding: 3px;
+  padding: 5px;
 }
 
 .header a {
@@ -45,6 +51,3 @@ input {
 .right-links {
   display: flex;
 }
-
-/* here is a change */
-/* another one */
