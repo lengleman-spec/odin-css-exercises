@@ -47,6 +47,7 @@ ul {
 
 li {
   margin-bottom: 16px;
+  max-width: 200px;
 }
 
 a {
@@ -59,10 +60,26 @@ a {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+
+  /* Issue: the cards are stacking vertically even when I use the flex-direction property.
+     - solved by turning the block level .card <div> into an inline-block then setting the width on each card 
+     - the flex-wrap and padding properties then give each card it's appropriate alignment.
+  */
   flex-wrap: wrap;
+  padding: 30px;
+  display: inline-block;
+  width: 200px;
+
+  /* Issue: I need more spacing between the cards both horizontally and vertically. The gap property will not work?
+      - The gap property only applies to flexbox and grid layouts. Since I'm using the display: inline-block property/value pair, the gap property won't work.
+  */
+  margin: auto;
 }
 
 .card-container {
   display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
   padding: 48px;
+  flex-wrap: wrap;
 }
